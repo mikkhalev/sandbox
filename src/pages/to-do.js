@@ -1,9 +1,9 @@
 import React from 'react';
-import PageTitle from "../../components/UI/page-title";
-import PageDescription from "../../components/UI/page-description";
-import classes from "../../css/pages/to-do.module.scss"
-import Button from "../../components/UI/button";
-import TaskItem from "../../components/UI/task-item";
+import PageTitle from "../components/UI/page-title";
+import PageDescription from "../components/UI/page-description";
+import classes from "../css/pages/to-do.module.scss"
+import Button from "../components/UI/button";
+import TaskItem from "../components/UI/task-item";
 import {useDispatch, useSelector} from "react-redux";
 const ToDo = () => {
     const dispatch = useDispatch();

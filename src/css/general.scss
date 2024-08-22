@@ -1,0 +1,72 @@
+* {
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header, footer, .container {
+  background-color: #1f1f1f;
+  padding: 20px;
+}
+
+aside {
+  background-color: #1f1f1f;
+  width: 260px;
+  border-right: 1px solid #444444;
+}
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+        "aside header"
+        "aside main";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  aside {
+    grid-area: aside;
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+    padding: 40px;
+  }
+}
+.wrapper {
+  width: 100%;
+  max-width: 1480px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.flex-box-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-box-column {
+  display: flex;
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.center {
+  justify-content: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: unset;
+}
+
+input {
+  background: unset;
+  outline: unset;
+  border: 1px solid rgba(255, 255, 255, 0.2705882353);
+  border-radius: 0;
+  padding: 5px 30px;
+}

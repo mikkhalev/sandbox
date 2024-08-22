@@ -1,0 +1,27 @@
+.excel {
+  gap: 30px;
+  table, th, td {
+    width: fit-content;
+    input {
+      border: 1px solid rgba(255, 255, 255, 0.2705882353);
+      border-collapse: collapse;
+      text-align: center;
+      color: #e0e0e0;
+
+      &:focus {
+        outline: 2px solid #ffffff;
+      }
+    }
+
+  }
+  th {
+    border: 1px solid rgb(255 255 255 / 78%);
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  tbody{
+    td {
+      font-size: 14px;
+    }
+  }
+}

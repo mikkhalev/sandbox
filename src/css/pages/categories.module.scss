@@ -1,6 +1,6 @@
-.categoriesPage {
-  gap: 30px;
-  max-width: 900px;
+.categories {
+  gap: 25px 2%;
   flex-wrap: wrap;
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
 }

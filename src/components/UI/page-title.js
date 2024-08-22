@@ -1,8 +1,8 @@
 import React from 'react';
-
-const PageTitle = () => {
+import classes from '../../css/components/UI/page-title.module.scss'
+const PageTitle = ({children}) => {
     return (
-        <h2>
+        <h2 className={classes.title}>
             {children}
         </h2>
     );

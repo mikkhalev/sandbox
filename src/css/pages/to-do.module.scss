@@ -1,0 +1,50 @@
+.todo {
+  gap: 30px;
+  .wrapper {
+    gap: 20px;
+    width: fit-content;
+    .listTitle {
+      background-color: #1f1f1f;
+      border-radius: 15px;
+      padding: 20px;
+      form {
+        gap: 20px;
+        input {
+          width: max-content;
+          padding: 7px 18px;
+          color: #e0e0e0;
+        }
+      }
+    }
+    .list {
+      gap: 10px;
+      .item {
+        .title {
+          gap: 20px;
+          span {
+           white-space: nowrap;
+          }
+        }
+        .delDone {
+          gap: 10px;
+          justify-content: end;
+          img {
+            width: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+      .endTask {
+        span {
+          text-decoration: line-through #e0e0e0;
+          color: #e0e0e070;
+        }
+        .delDone {
+          >img:nth-child(1) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

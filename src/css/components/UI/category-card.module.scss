@@ -1,0 +1,21 @@
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  height: 190px;
+
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  justify-content: center;
+  transition: 0.3s;
+  &:hover {
+    background-color: #323232;
+    border-color: #e0e0e0;
+    transform: scale(1.05);
+  }
+}
+.highlighted {
+  border: 1px solid #FFFFFF;
+}

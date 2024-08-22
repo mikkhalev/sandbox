@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/reset.scss'
+import './css/general.scss'
+import Main from "./components/main";
+import Sidebar from "./components/sidebar";
+import Header from "./components/header";
+import { BrowserRouter as Router} from 'react-router-dom';
+import store from "../src/components/redux/store";
+import {Provider} from "react-redux";
 
 function App() {
+    let pages = [
+        {link: '/excel', title: 'Excel',                 image: '', border: false},
+        {link: '/to-do', title: 'To Do',                 image: '', border: false},
+        {link: '/calculator', title: 'Калькулятор',      image: '', border: false},
+    ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+          <Provider store={store}>
+              <div className="App">
+                  <Sidebar pages={pages}/>
+                  <Header />
+                  <Main pages={pages}/>
+              </div>
+          </Provider>
+      </Router>
   );
 }
 

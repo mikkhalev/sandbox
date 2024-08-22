@@ -1,10 +1,15 @@
 import React from 'react';
-
-const CategoryCard = () => {
+import style from '../../css/components/UI/category-card.module.scss'
+import {Link} from "react-router-dom";
+const CategoryCard = ({index, link, title, border}) => {
     return (
-        <div className={}>
-
-        </div>
+        <Link to={link} key={index}>
+            <div className={`${style.card} flex-box-column ${border?style.highlighted:''}`}>
+                {
+                    title
+                }
+            </div>
+        </Link>
     );
 };
 

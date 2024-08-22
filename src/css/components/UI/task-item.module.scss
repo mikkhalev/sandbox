@@ -1,0 +1,30 @@
+.item {
+  .title {
+    gap: 20px;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  .delDone {
+    gap: 10px;
+    justify-content: end;
+
+    img {
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.endTask {
+  span {
+    text-decoration: line-through #e0e0e0;
+    color: #e0e0e070;
+  }
+  .delDone {
+    >img:nth-child(1) {
+      display: none;
+    }
+  }
+}
